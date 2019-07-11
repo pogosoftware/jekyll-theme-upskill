@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-upskill"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2.0"
   spec.authors       = ["Przemysław Pogorzelec"]
   spec.email         = ["opensource+jekyll-theme-upskill@github.com"]
 
