@@ -1,7 +1,7 @@
 <ul id="toc" class="toc">
     {% for section in page.sections %}
     <li>
-        <a class="toc-link" href="#{{ section }}">Overview</a>
+        <a class="toc-link" href="#{{ section.id }}">{{ section.title}}</a>
     </li>
     {% endfor %}
 </ul>

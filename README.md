@@ -47,8 +47,10 @@ To generate proper table of content add `sections` sections to your page. Exampl
 
 ```yaml
 sections:
-  - sec1
-  - sec2
+  - id: sec1
+    title: Section 1
+  - id: sec2
+    title: Section 2
 ```
 
 ## Development
