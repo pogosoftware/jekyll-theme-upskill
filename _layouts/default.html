@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body data-spy="scroll" data-target="#toc" class="container-flex">
+    <a class="github-fork-ribbon left-top" href="https://github.com/pogosoftware/upskill-aks"
+        data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+
+    {%- include header.html -%}
+
+    <section class="container-flex-content">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- /Article -->
+                <article class="col-lg-9 text-justify">
+                    {{ content }}
+                </article>
+                <!-- /Article -->
+                <!-- Table of Content -->
+                <aside class="col-lg-3">
+                    <div class="sticky">
+                        {%- include toc.html -%}
+                    </div>
+                </aside>
+                <!-- /Table of Content -->
+            </div>
+        </div>
+    </section>
+
+    {%- include footer.html -%}
+
+    <script src="https://kit.fontawesome.com/9e4ba468e1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/sticky-kit.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
